@@ -1,0 +1,27 @@
+PLINK v1.90b6.9 64-bit (4 Mar 2019)
+Options in effect:
+  --bfile
+  --model
+  --out test
+
+Hostname: DESKTOP-75086QI
+Working directory: C:\Users\micha\Documents\GoogleDrive\5.Semester\Medical\Assignments\01
+Start time: Mon May 06 08:33:26 2019
+
+Random number seed: 1557124406
+16335 MB RAM detected; reserving 8167 MB for main workspace.
+1440616 variants loaded from .bim file.
+619 people (305 males, 314 females) loaded from .fam.
+619 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 523 founders and 96 nonfounders present.
+Calculating allele frequencies... done.
+Warning: 1879 het. haploid genotypes present (see test.hh ); many commands
+treat these as missing.
+Total genotyping rate is 0.99772.
+1440616 variants and 619 people pass filters and QC.
+Among remaining phenotypes, 119 are cases and 500 are controls.
+Excluding 112 MT/haploid variants from --model analysis.
+Writing --model report to test.model ... done.
+
+End time: Mon May 06 08:33:37 2019

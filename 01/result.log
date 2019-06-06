@@ -1,0 +1,14 @@
+PLINK v1.90b6.9 64-bit (4 Mar 2019)
+Options in effect:
+  --file plink
+  --out result
+
+Hostname: DESKTOP-75086QI
+Working directory: C:\Users\micha\Documents\GoogleDrive\5.Semester\Medical\Assignments\01
+Start time: Mon May 06 08:23:54 2019
+
+Random number seed: 1557123834
+16335 MB RAM detected; reserving 8167 MB for main workspace.
+Error: Failed to open plink.map.
+
+End time: Mon May 06 08:23:54 2019
