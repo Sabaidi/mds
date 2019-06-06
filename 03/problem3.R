@@ -18,7 +18,7 @@ df <- data("leukemiasEset")
 e_matrix = exprs(leukemiasEset)
 # c) Phenodata
 p_data <- pData(leukemiasEset)
-summary(p_data)
+print(summary(p_data))
 
 # d) + f)
 heatmap.2(e_matrix)
@@ -31,12 +31,21 @@ colnames(design) <- levels(p_data$LeukemiaType)
 
 fit <- lmFit(leukemiasEset, design)
 
-
+# None vs any leukemia
 contrast.matrix <- makeContrasts(NoL - (ALL + AML + CLL + CML)/4, levels = design)
 
 fit2 <- contrasts.fit(fit, contrast.matrix)
 fit2 <- eBayes(fit2)
-topTable(fit2, coef = 1, adjust="BH")
-
+topTable(fit2, adjust="BH")
 results <- decideTests(fit2)
+vennDiagram(results)
+
+# Acute vs chronic 
+contrast.matrix2 <- makeContrasts((ALL + AML)/2 - (CLL + CML)/2, levels = design)
+
+fit3 <- contrasts.fit(fit, contrast.matrix2)
+fit3 <- eBayes(fit3)
+
+topTable(fit3, adjust="BH")
+results <- decideTests(fit3)
 vennDiagram(results)
